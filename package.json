@@ -4,10 +4,12 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": ["javascript", "example"],
+  "keywords": [
+    "javascript",
+    "example"
+  ],
   "author": "Brian Toal",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "jest": "29.7.0"
   }
