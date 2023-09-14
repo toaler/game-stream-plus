@@ -1,0 +1,14 @@
+{
+  "name": "game-stream-plus",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["javascript", "example"],
+  "author": "Brian Toal",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jest": "29.7.0"
+  }
+}
