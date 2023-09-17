@@ -1,11 +1,11 @@
-const Schedule = require("../../src/Schedule");
-const Day = require("../../src/Day");
-const Game = require("../../src/Game");
-const Status = require("../../src/Status");
-const Venue = require("../../src/Venue");
-const Content = require("../../src/Content");
-const Team = require("../../src/Team");
-const LeagueRecord = require("../../src/LeagueRecord");
+const Schedule = require("../../src/state/Schedule");
+const Day = require("../../src/state/Day");
+const Game = require("../../src/state/Game");
+const Status = require("../../src/state/Status");
+const Venue = require("../../src/state/Venue");
+const Content = require("../../src/state/Content");
+const Team = require("../../src/state/Team");
+const LeagueRecord = require("../../src/state/LeagueRecord");
 
 const fs = require('fs');
 
@@ -29,18 +29,14 @@ test('Read JSON file synchronously', () => {
         dates.add(new Day(day.date, day.totalItems, day.totalEvents, day.totalGames, day.totalMatches));
 
         day.games.forEach(function(game) {
-            console.log(game);
-
-            console.log(game.teams.home.team);
-
             new Game(game.gamePk, game.link, game.gameType, game.season,
                 new Status(game.status.abstractGameState, game.status.codedGameState, game.status.detailedState, game.status.statusCode, game.status.startTimeTBD),
                 new Team(game.teams.home.team.id, game.teams.home.team.name, game.teams.home.team.link),
                 new Team(game.teams.away.team.id, game.teams.away.team.name, game.teams.away.team.link),
                 game.teams.home.score,
                 game.teams.away.score,
-                new LeagueRecord(), // TODO read game.teams.home.leagueRecord
-                new LeagueRecord(), // TODO read game.teams.away.leagueRecord
+                new LeagueRecord(game.teams.home.leagueRecord.wins, game.teams.home.leagueRecord.losses, game.teams.home.leagueRecord.ot, game.teams.home.leagueRecord.type), // TODO read game.teams.home.leagueRecord
+                new LeagueRecord(game.teams.away.leagueRecord.wins, game.teams.away.leagueRecord.losses, game.teams.away.leagueRecord.ot, game.teams.away.leagueRecord.type), // TODO read game.teams.home.leagueRecord
                 new Venue(game.venue.name, game.venue.link),
                 new Content(game.content.link))
         });
@@ -48,7 +44,6 @@ test('Read JSON file synchronously', () => {
 
     dates.forEach(function(day) {
         expect(day.date.length).toBeGreaterThan(0);
-        console.log(day.date);
 
         // TODO write more asserts to validate the nested data structures
     });
