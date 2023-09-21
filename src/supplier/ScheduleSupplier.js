@@ -15,29 +15,37 @@ class ScheduleSupplier {
     }
 
     get() {
-        const s = new Schedule(this._jsonData.copyright, this._jsonData.totalItems, this._jsonData.totalEvents,
-            this._jsonData.totalGames, this._jsonData.totalMatches)
-
         const dates = new Set();
 
         this._jsonData.dates.forEach(function (day) {
-            dates.add(new Day(day.date, day.totalItems, day.totalEvents, day.totalGames, day.totalMatches));
+
+            const g = new Set();
 
             day.games.forEach(function (game) {
-                new Game(game.gamePk, game.link, game.gameType, game.season,
-                    new Status(game.status.abstractGameState, game.status.codedGameState, game.status.detailedState, game.status.statusCode, game.status.startTimeTBD),
-                    new Team(game.teams.home.team.id, game.teams.home.team.name, game.teams.home.team.link),
-                    new Team(game.teams.away.team.id, game.teams.away.team.name, game.teams.away.team.link),
-                    game.teams.home.score,
-                    game.teams.away.score,
-                    new LeagueRecord(game.teams.home.leagueRecord.wins, game.teams.home.leagueRecord.losses, game.teams.home.leagueRecord.ot, game.teams.home.leagueRecord.type), // TODO read game.teams.home.leagueRecord
-                    new LeagueRecord(game.teams.away.leagueRecord.wins, game.teams.away.leagueRecord.losses, game.teams.away.leagueRecord.ot, game.teams.away.leagueRecord.type), // TODO read game.teams.home.leagueRecord
-                    new Venue(game.venue.name, game.venue.link),
-                    new Content(game.content.link))
+                g.add(
+
+                    new Game(
+                        game.gamePk,
+                        game.link,
+                        game.gameType,
+                        game.season,
+                        game.gameDate,
+                        new Status(game.status.abstractGameState, game.status.codedGameState, game.status.detailedState, game.status.statusCode, game.status.startTimeTBD),
+                        new Team(game.teams.home.team.id, game.teams.home.team.name, game.teams.home.team.link),
+                        new Team(game.teams.away.team.id, game.teams.away.team.name, game.teams.away.team.link),
+                        game.teams.home.score,
+                        game.teams.away.score,
+                        new LeagueRecord(game.teams.home.leagueRecord.wins, game.teams.home.leagueRecord.losses, game.teams.home.leagueRecord.ot, game.teams.home.leagueRecord.type), // TODO read game.teams.home.leagueRecord
+                        new LeagueRecord(game.teams.away.leagueRecord.wins, game.teams.away.leagueRecord.losses, game.teams.away.leagueRecord.ot, game.teams.away.leagueRecord.type), // TODO read game.teams.home.leagueRecord
+                        new Venue(game.venue.name, game.venue.link),
+                        new Content(game.content.link)));
             });
+
+            dates.add(new Day(day.date, day.totalItems, day.totalEvents, day.totalGames, day.totalMatches, g));
         });
 
-        return s;
+        return new Schedule(this._jsonData.copyright, this._jsonData.totalItems, this._jsonData.totalEvents,
+            this._jsonData.totalGames, this._jsonData.totalMatches, dates);
     }
 }
 
