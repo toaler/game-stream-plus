@@ -1,33 +1,43 @@
     class Day {
-
+        #date;
+        #totalItems;
+        #totalEvents
+        #totalGames;
+        #totalMatches;
+        #games;
 
         // Constructor method is called when a new instance is created
-        constructor(date, totalItems, totalEvents, totalGames, totalMatches) {
-            this._date = date;
-            this._totalItems = totalItems;
-            this._totalEvents = totalEvents;
-            this._totalGames = totalGames;
-            this._totalMatches = totalMatches;
+        constructor(date, totalItems, totalEvents, totalGames, totalMatches, games) {
+            this.#date = date;
+            this.#totalItems = totalItems;
+            this.#totalEvents = totalEvents;
+            this.#totalGames = totalGames;
+            this.#totalMatches = totalMatches;
+            this.#games = games;
         }
 
         get date() {
-            return this._date;
+            return this.#date;
         }
 
         get totalItems() {
-            return this._totalItems;
+            return this.#totalItems;
         }
 
         get totalEvents() {
-            return this._totalEvents;
+            return this.#totalEvents;
         }
 
         get totalGames() {
-            return this._totalGames;
+            return this.#totalGames;
         }
 
         get totalMatches() {
-            return this._totalMatches;
+            return this.#totalMatches;
+        }
+
+        get games() {
+            return this.#games;
         }
     }
 
