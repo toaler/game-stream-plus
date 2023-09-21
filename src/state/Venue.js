@@ -14,4 +14,4 @@ class Venue {
     }
 }
 
-module.exports = Venue;
+export default Venue;

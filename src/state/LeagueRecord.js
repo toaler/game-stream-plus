@@ -24,4 +24,4 @@ class LeagueRecord {
     }
 }
 
-module.exports = LeagueRecord;
+export default LeagueRecord;

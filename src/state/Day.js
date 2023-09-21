@@ -31,4 +31,4 @@
         }
     }
 
-    module.exports = Day;
+    export default Day;

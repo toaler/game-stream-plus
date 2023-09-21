@@ -9,4 +9,4 @@ class Content {
     }
 }
 
-module.exports = Content;
+export default Content;

@@ -20,4 +20,4 @@ class Team {
 
 }
 
-module.exports = Team;
+export default Team;
