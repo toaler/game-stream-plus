@@ -1,11 +1,11 @@
-const Schedule = require("../state/Schedule");
-const Day = require("../state/Day");
-const Game = require("../state/Game");
-const Status = require("../state/Status");
-const Team = require("../state/Team");
-const LeagueRecord = require("../state/LeagueRecord");
-const Venue = require("../state/Venue");
-const Content = require("../state/Content");
+import Schedule from "../state/Schedule.js";
+import Day from "../state/Day.js";
+import Team from "../state/Team.js";
+import LeagueRecord from "../state/LeagueRecord.js";
+import Venue from "../state/Venue.js";
+import Content from "../state/Content.js";
+import Game from "../state/Game.js";
+import Status from "../state/Status.js";
 
 class ScheduleSupplier {
 
@@ -41,4 +41,4 @@ class ScheduleSupplier {
     }
 }
 
-module.exports = ScheduleSupplier;
+export default ScheduleSupplier;
