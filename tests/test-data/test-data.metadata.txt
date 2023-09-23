@@ -1,0 +1,2 @@
+boxscore.2023010001.json - https://statsapi.web.nhl.com/api/v1/game/2023010001/boxscore
+live.feed.2023010001.json - https://statsapi.web.nhl.com/api/v1/game/2023010001/feed/live
