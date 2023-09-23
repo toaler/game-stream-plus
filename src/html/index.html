@@ -86,15 +86,12 @@
         const endDate = new Date();
         endDate.setDate(today.getDate() + 7);  // Set end date to today + 7 days
 
-        const startDateInput = document.getElementById('startDate');
-        const endDateInput = document.getElementById('endDate');
-
         // Format the dates in 'yyyy-MM-dd' for setting the input values
         const formattedToday = formatDate(today);
         const formattedEndDate = formatDate(endDate);
 
-        startDateInput.value = formattedToday;  // Set start date to today
-        endDateInput.value = formattedEndDate;  // Set end date to today + 7 days
+        document.getElementById('startDate').value = formattedToday;  // Set start date to today
+        document.getElementById('endDate').value = formattedEndDate;  // Set end date to today + 7 days
     });
 
     function formatDate(date) {
