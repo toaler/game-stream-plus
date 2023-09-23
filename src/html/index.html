@@ -5,6 +5,30 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>NHL Data Table</title>
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+        }
+
+        form select {
+            width: 200px; /* Adjust the width as needed */
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -20,27 +44,70 @@
             background-color: #f2f2f2;
         }
     </style>
+
 </head>
 <body>
 
-<script type="module">
+<form id="filter">
 
+    <!--
+    TODO add the other filters for searching
+     https://statsapi.web.nhl.com/api/v1/schedule?startDate=2021-12-01&endDate=2021-12-04&hydrate=team%2Clinescore%2Cmetadata%2CseriesSummary(series)&teamId=5
+    -->
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" name="startDate">
+
+    <label for="endDate">End Date:</label>
+    <input type="date" id="endDate" name="endDate">
+
+    <label for="options">Select multiple options:</label>
+    <select id="options" name="options" multiple style="width: 200px;">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+    </select>
+
+    <input type="submit" value="Submit">
+</form>
+
+<div id="nhlDataContainer"></div>
+
+
+<script type="module">
     import ScheduleSupplier from "../supplier/ScheduleSupplier.js";
 
-    fetch('../../tests/test-data/schedule.20211201.20211204.json')
-        .then(response => response.json())
-        .then(nhlData => {
-            const supplier = new ScheduleSupplier(nhlData);
-            const s = supplier.get();
 
 
-            let htmlContent = '';
+    document.getElementById('filter').addEventListener('submit', function (event) {
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
 
-            for (const d of s.dates) {
-                console.log(d.date);
-                htmlContent += `<h1>Date: ${d.date}</h1>`;
+        console.log(startDate);
 
-                htmlContent += `
+        event.preventDefault();  // Prevents the default form submission behavior
+
+
+
+        const url1 = '../../tests/test-data/schedule.20211201.20211204.json';
+        const url = `https://statsapi.web.nhl.com/api/v1/schedule?startDate=${startDate}&endDate=${endDate}`;
+        fetch(url)
+            .then(response => response.json())
+            .then(nhlData => {
+                const supplier = new ScheduleSupplier(nhlData);
+                const s = supplier.get();
+
+
+                let htmlContent = '';
+
+                for (const d of s.dates) {
+                    htmlContent += `<h1>Date: ${d.date}</h1>`;
+
+                    htmlContent += `
               <table>
                 <thead>
                 <tr>
@@ -58,8 +125,8 @@
                 <tbody>
                 `;
 
-                for (const g of d.games) {
-                    htmlContent += `
+                    for (const g of d.games) {
+                        htmlContent += `
                  <tr>
                   <td>${g.gamePk}</td>
                   <td>${g.link}</td>
@@ -72,20 +139,19 @@
                   <td>${g.awayTeam.name}</td>
                 </tr>
                 `;
-                }
+                    }
 
-                htmlContent += `
+                    htmlContent += `
                 </tbody>
               </table>
               `;
 
-                console.log(htmlContent);
+                }
 
-            }
-
-            const body = document.body;
-            body.innerHTML = htmlContent;
-        });
+                const container = document.getElementById('nhlDataContainer');
+                container.innerHTML = htmlContent;
+            });
+    });
 
 
 </script>
