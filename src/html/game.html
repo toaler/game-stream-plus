@@ -6,21 +6,14 @@
 </head>
 <body>
 
-<div id="bodyContainer"></div>
+<div id="body"></div>
 
-<script>
-    // Function to parse query parameters from the URL
-    function getQueryParam(key) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(key);
-    }
+<script type="module">
+    import HttpUtils from '../util/HttpUtils.js';
 
-    // Example of how to use the function to retrieve values
-    const gamePk = getQueryParam('gamePk');
+    const gamePk = HttpUtils.getQueryParam('gamePk');
 
-    const container = document.getElementById('bodyContainer');
-    container.innerHTML = gamePk;
-
+    document.getElementById('body').innerHTML = gamePk;
 </script>
 </body>
 </html>
