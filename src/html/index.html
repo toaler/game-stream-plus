@@ -77,7 +77,6 @@
 
 <div id="nhlDataContainer"></div>
 
-
 <script type="module">
     import ScheduleSupplier from "../supplier/ScheduleSupplier.js";
 
@@ -114,13 +113,8 @@
         const startDate = document.getElementById('startDate').value;
         const endDate = document.getElementById('endDate').value;
 
-        console.log(startDate);
-
         event.preventDefault();  // Prevents the default form submission behavior
 
-
-
-        const url1 = '../../tests/test-data/schedule.20211201.20211204.json';
         const url = `https://statsapi.web.nhl.com/api/v1/schedule?startDate=${startDate}&endDate=${endDate}`;
         fetch(url)
             .then(response => response.json())
@@ -155,7 +149,7 @@
                     for (const g of d.games) {
                         htmlContent += `
                  <tr>
-                  <td>${g.gamePk}</td>
+                  <td><a href="game.html?gamePk=${g.gamePk}">${g.gamePk}</a></td>
                   <td>${g.link}</td>
                   <td>${g.gameDate}</td>
                   <td>${g.gameType}</td>
