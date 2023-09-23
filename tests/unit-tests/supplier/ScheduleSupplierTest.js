@@ -1,6 +1,6 @@
 // import * as fs from "fs";
 import * as fs from "fs";
-import ScheduleSupplier from "../../src/supplier/ScheduleSupplier.js";
+import ScheduleSupplier from "../../../src/supplier/ScheduleSupplier.js";
 import expect from "expect";
 
 test('Read JSON file synchronously', () => {
