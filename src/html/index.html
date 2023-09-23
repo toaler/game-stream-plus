@@ -79,35 +79,18 @@
 
 <script type="module">
     import ScheduleSupplier from "../supplier/ScheduleSupplier.js";
+    import TimeUtils from "../util/TimeUtils.js";
 
     document.addEventListener('DOMContentLoaded', () => {
         const today = new Date();
         const endDate = new Date();
         endDate.setDate(today.getDate() + 7);  // Set end date to today + 7 days
 
-        // Format the dates in 'yyyy-MM-dd' for setting the input values
-        const formattedToday = formatDate(today);
-        const formattedEndDate = formatDate(endDate);
-
-        document.getElementById('startDate').value = formattedToday;  // Set start date to today
-        document.getElementById('endDate').value = formattedEndDate;  // Set end date to today + 7 days
+        document.getElementById('startDate').value = TimeUtils.formatDate(today);  // Set start date to today
+        document.getElementById('endDate').value = TimeUtils.formatDate(endDate);  // Set end date to today + 7 days
     });
 
-    function formatDate(date) {
-        const year = date.getFullYear();
-        let month = date.getMonth() + 1;
-        let day = date.getDate();
 
-        // Add leading zero for single-digit months and days
-        if (month < 10) {
-            month = '0' + month;
-        }
-        if (day < 10) {
-            day = '0' + day;
-        }
-
-        return `${year}-${month}-${day}`;
-    }
 
     document.getElementById('filter').addEventListener('submit', function (event) {
         const startDate = document.getElementById('startDate').value;
