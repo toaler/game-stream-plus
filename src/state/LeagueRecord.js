@@ -1,7 +1,7 @@
 class LeagueRecord {
     // Constructor method is called when a new instance is created
     constructor(wins,  losses, ot, type) {
-        this._wins = wins;
+        this._wins = wins !== undefined ? wins : 'Default Value';
         this._losses = losses;
         this._ot = ot;
         this._type = type;
@@ -21,6 +21,10 @@ class LeagueRecord {
 
     get type() {
         return this._type;
+    }
+
+    toString() {
+        return `(${this.wins} - ${this.losses} - ${this.ot})`;
     }
 }
 
