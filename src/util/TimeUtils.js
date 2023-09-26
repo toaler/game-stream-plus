@@ -1,4 +1,5 @@
 class TimeUtils {
+
     static formatDate(date) {
         const year = date.getFullYear();
         let month = date.getMonth() + 1;
