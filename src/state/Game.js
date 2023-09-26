@@ -1,6 +1,6 @@
-    class Game {
+class Game {
         // Constructor method is called when a new instance is created
-        constructor(gamePk, link, gameType, season, gameDate, status, homeTeam, awayTeam, homeScore, awayScore, homeRecord, awayRecord, venue, content) {
+        constructor(gamePk, link, gameType, season, gameDate, status, homeTeam, awayTeam, homeScore, awayScore, homeRecord, awayRecord, broadcasts, venue, content) {
 
             this._gamePk = gamePk;
             this._link = link;
@@ -8,6 +8,7 @@
             this._season = season;
             this._gameDate = gameDate;
             this._status = status;
+            this._broadcasts = broadcasts;
             this._venue = venue;
             this._content = content;
             this._homeTeam = homeTeam;
@@ -16,6 +17,7 @@
             this._awayScore = awayScore;
             this._homeRecord = homeRecord;
             this._awayRecord = awayRecord;
+
         }
 
         get gamePk() {
@@ -68,6 +70,10 @@
 
         get teams() {
             return this._teams;
+        }
+
+        get broadcasts() {
+            return this._broadcasts;
         }
 
         get venue() {

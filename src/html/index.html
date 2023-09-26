@@ -98,7 +98,7 @@
 
         event.preventDefault();  // Prevents the default form submission behavior
 
-        const url = `https://statsapi.web.nhl.com/api/v1/schedule?startDate=${startDate}&endDate=${endDate}`;
+        const url = `https://statsapi.web.nhl.com/api/v1/schedule?startDate=${startDate}&endDate=${endDate}&expand=schedule.broadcasts&expand=schedule.linescore&expand=schedule.ticket`;
         fetch(url)
             .then(response => response.json())
             .then(nhlData => {
@@ -125,6 +125,7 @@
                   <th>Away Team</th>
                   <th>Status</th>
                   <th>Status Detail</th>
+                  <th>Broadcasts</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -144,6 +145,7 @@
                   <td>${g.awayTeam.name} ${g.awayRecord}</td>
                   <td>${g.status.abstractGameState}</td>
                   <td>${g.status.detailedState}</td>
+                  <td>${Array.from(g.broadcasts).join(', ')}</td>
                 </tr>
                 `;
                     }
