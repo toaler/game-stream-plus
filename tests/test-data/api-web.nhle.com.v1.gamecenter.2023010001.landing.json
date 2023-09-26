@@ -1,0 +1,864 @@
+{
+  "id": 2023010001,
+  "season": 20232024,
+  "gameType": 1,
+  "gameDate": "2023-09-23",
+  "venue": "Rod Laver Arena",
+  "startTimeUTC": "2023-09-23T04:05:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "+10:00",
+  "tvBroadcasts": [
+    {
+      "id": 282,
+      "market": "N",
+      "countryCode": "CA",
+      "network": "SN"
+    },
+    {
+      "id": 324,
+      "market": "N",
+      "countryCode": "US",
+      "network": "NHLN"
+    },
+    {
+      "id": 329,
+      "market": "N",
+      "countryCode": "US",
+      "network": "ESPN+"
+    }
+  ],
+  "gameState": "FINAL",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 26,
+    "name": "Kings",
+    "abbrev": "LAK",
+    "placeName": "Los Angeles",
+    "score": 3,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+  },
+  "homeTeam": {
+    "id": 53,
+    "name": "Coyotes",
+    "abbrev": "ARI",
+    "placeName": "Arizona",
+    "score": 5,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/ARI_light.svg"
+  },
+  "shootoutInUse": true,
+  "maxPeriods": 5,
+  "regPeriods": 3,
+  "otInUse": true,
+  "tiesInUse": false,
+  "clock": {
+    "running": false,
+    "inIntermission": false
+  },
+  "summary": {
+    "linescore": {
+      "byPeriod": [
+        {
+          "period": 1,
+          "away": 0,
+          "home": 0
+        },
+        {
+          "period": 2,
+          "away": 3,
+          "home": 4
+        },
+        {
+          "period": 3,
+          "away": 0,
+          "home": 1
+        }
+      ],
+      "shootout": {
+        "awayDecidingGoal": 0,
+        "awayConversions": 0,
+        "awayAttempts": 0,
+        "homeDecidingGoal": 0,
+        "homeConversions": 0,
+        "homeAttempts": 0
+      },
+      "totals": {
+        "away": 3,
+        "home": 5
+      }
+    },
+    "scoring": [
+      {
+        "period": 1,
+        "goals": []
+      },
+      {
+        "period": 2,
+        "goals": [
+          {
+            "situationCode": "1551",
+            "strength": "ev",
+            "playerId": 8479343,
+            "firstName": "Clayton",
+            "lastName": "Keller",
+            "name": "C. Keller",
+            "teamAbbrev": "ARI",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8479343.png",
+            "goalsToDate": 1,
+            "awayScore": 0,
+            "homeScore": 1,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "01:48",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8477951,
+                "firstName": "Nick",
+                "lastName": "Schmaltz",
+                "assistsToDate": 1
+              },
+              {
+                "playerId": 8480434,
+                "firstName": "Sean",
+                "lastName": "Durzi",
+                "assistsToDate": 1
+              }
+            ]
+          },
+          {
+            "situationCode": "1551",
+            "strength": "pp",
+            "playerId": 8481711,
+            "firstName": "Matias",
+            "lastName": "Maccelli",
+            "name": "M. Maccelli",
+            "teamAbbrev": "ARI",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8481711.png",
+            "goalsToDate": 1,
+            "awayScore": 0,
+            "homeScore": 2,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "08:22",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8479976,
+                "firstName": "Juuso",
+                "lastName": "Valimaki",
+                "assistsToDate": 1
+              },
+              {
+                "playerId": 8475722,
+                "firstName": "Jason",
+                "lastName": "Zucker",
+                "assistsToDate": 1
+              }
+            ]
+          },
+          {
+            "situationCode": "1551",
+            "strength": "ev",
+            "playerId": 8477960,
+            "firstName": "Adrian",
+            "lastName": "Kempe",
+            "name": "A. Kempe",
+            "teamAbbrev": "LAK",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8477960.png",
+            "goalsToDate": 1,
+            "awayScore": 1,
+            "homeScore": 2,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "09:08",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8481606,
+                "firstName": "Jordan",
+                "lastName": "Spence",
+                "assistsToDate": 1
+              }
+            ]
+          },
+          {
+            "situationCode": "1551",
+            "strength": "ev",
+            "playerId": 8478474,
+            "firstName": "Lawson",
+            "lastName": "Crouse",
+            "name": "L. Crouse",
+            "teamAbbrev": "ARI",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8478474.png",
+            "goalsToDate": 1,
+            "awayScore": 1,
+            "homeScore": 3,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "11:19",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8475760,
+                "firstName": "Nick",
+                "lastName": "Bjugstad",
+                "assistsToDate": 1
+              }
+            ]
+          },
+          {
+            "situationCode": "1551",
+            "strength": "ev",
+            "playerId": 8483431,
+            "firstName": "Logan",
+            "lastName": "Cooley",
+            "name": "L. Cooley",
+            "teamAbbrev": "ARI",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8483431.png",
+            "goalsToDate": 1,
+            "awayScore": 1,
+            "homeScore": 4,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "11:40",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8482655,
+                "firstName": "J.J.",
+                "lastName": "Moser",
+                "assistsToDate": 1
+              },
+              {
+                "playerId": 8482699,
+                "firstName": "Dylan",
+                "lastName": "Guenther",
+                "assistsToDate": 1
+              }
+            ]
+          },
+          {
+            "situationCode": "1551",
+            "strength": "ev",
+            "playerId": 8478042,
+            "firstName": "Viktor",
+            "lastName": "Arvidsson",
+            "name": "V. Arvidsson",
+            "teamAbbrev": "LAK",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8478042.png",
+            "goalsToDate": 1,
+            "awayScore": 2,
+            "homeScore": 4,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "14:33",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8477942,
+                "firstName": "Kevin",
+                "lastName": "Fiala",
+                "assistsToDate": 1
+              }
+            ]
+          },
+          {
+            "situationCode": "1551",
+            "strength": "ev",
+            "playerId": 8479675,
+            "firstName": "Trevor",
+            "lastName": "Moore",
+            "name": "T. Moore",
+            "teamAbbrev": "LAK",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8479675.png",
+            "goalsToDate": 1,
+            "awayScore": 3,
+            "homeScore": 4,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "16:12",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8478042,
+                "firstName": "Viktor",
+                "lastName": "Arvidsson",
+                "assistsToDate": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "period": 3,
+        "goals": [
+          {
+            "situationCode": "1551",
+            "strength": "ev",
+            "playerId": 8480849,
+            "firstName": "Barrett",
+            "lastName": "Hayton",
+            "name": "B. Hayton",
+            "teamAbbrev": "ARI",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8480849.png",
+            "goalsToDate": 1,
+            "awayScore": 3,
+            "homeScore": 5,
+            "leadingTeamAbbrev": "ARI",
+            "timeInPeriod": "19:38",
+            "goalModifier": "empty-net",
+            "assists": [
+              {
+                "playerId": 8479343,
+                "firstName": "Clayton",
+                "lastName": "Keller",
+                "assistsToDate": 1
+              },
+              {
+                "playerId": 8477951,
+                "firstName": "Nick",
+                "lastName": "Schmaltz",
+                "assistsToDate": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "shootout": [],
+    "threeStars": [
+      {
+        "star": 1,
+        "playerId": 8483431,
+        "teamAbbrev": "ARI",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8483431.png",
+        "name": "L. Cooley",
+        "firstName": "Logan",
+        "lastName": "Cooley",
+        "sweaterNo": 92,
+        "position": "C"
+      },
+      {
+        "star": 2,
+        "playerId": 8478042,
+        "teamAbbrev": "LAK",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/LAK/8478042.png",
+        "name": "V. Arvidsson",
+        "firstName": "Viktor",
+        "lastName": "Arvidsson",
+        "sweaterNo": 33,
+        "position": "R"
+      },
+      {
+        "star": 3,
+        "playerId": 8481711,
+        "teamAbbrev": "ARI",
+        "headshot": "https://assets.nhle.com/mugs/nhl/20232024/ARI/8481711.png",
+        "name": "M. Maccelli",
+        "firstName": "Matias",
+        "lastName": "Maccelli",
+        "sweaterNo": 63,
+        "position": "L"
+      }
+    ],
+    "teamGameStats": [
+      {
+        "category": "sog",
+        "awayValue": "31",
+        "homeValue": "15"
+      },
+      {
+        "category": "faceoffPctg",
+        "awayValue": "0.0",
+        "homeValue": "0.0"
+      },
+      {
+        "category": "powerPlay",
+        "awayValue": "0/4",
+        "homeValue": "1/2"
+      },
+      {
+        "category": "pim",
+        "awayValue": "11",
+        "homeValue": "15"
+      },
+      {
+        "category": "hits",
+        "awayValue": "0",
+        "homeValue": "0"
+      },
+      {
+        "category": "blockedShots",
+        "awayValue": "0",
+        "homeValue": "0"
+      },
+      {
+        "category": "giveaways",
+        "awayValue": "0",
+        "homeValue": "0"
+      },
+      {
+        "category": "takeaways",
+        "awayValue": "0",
+        "homeValue": "0"
+      }
+    ],
+    "shotsByPeriod": [
+      {
+        "period": 1,
+        "away": 11,
+        "home": 4
+      },
+      {
+        "period": 2,
+        "away": 10,
+        "home": 7
+      },
+      {
+        "period": 3,
+        "away": 10,
+        "home": 4
+      }
+    ],
+    "penalties": [
+      {
+        "period": 1,
+        "penalties": [
+          {
+            "timeInPeriod": "01:44",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Juuso Valimaki",
+            "teamAbbrev": "ARI",
+            "descKey": "holding"
+          },
+          {
+            "timeInPeriod": "04:14",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Jacob Doty",
+            "teamAbbrev": "LAK",
+            "descKey": "roughing"
+          },
+          {
+            "timeInPeriod": "04:14",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Josh Brown",
+            "teamAbbrev": "ARI",
+            "descKey": "roughing"
+          },
+          {
+            "timeInPeriod": "06:20",
+            "type": "MAJ",
+            "duration": 5,
+            "committedByPlayer": "Josh Brown",
+            "teamAbbrev": "ARI",
+            "descKey": "fighting"
+          },
+          {
+            "timeInPeriod": "06:20",
+            "type": "MAJ",
+            "duration": 5,
+            "committedByPlayer": "Jacob Doty",
+            "teamAbbrev": "LAK",
+            "descKey": "fighting"
+          }
+        ]
+      },
+      {
+        "period": 2,
+        "penalties": [
+          {
+            "timeInPeriod": "06:40",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Trevor Lewis",
+            "teamAbbrev": "LAK",
+            "descKey": "slashing"
+          },
+          {
+            "timeInPeriod": "12:25",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Alex Kerfoot",
+            "teamAbbrev": "ARI",
+            "descKey": "tripping"
+          },
+          {
+            "timeInPeriod": "19:38",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Juuso Valimaki",
+            "teamAbbrev": "ARI",
+            "descKey": "holding"
+          }
+        ]
+      },
+      {
+        "period": 3,
+        "penalties": [
+          {
+            "timeInPeriod": "09:36",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Trevor Moore",
+            "teamAbbrev": "LAK",
+            "descKey": "roughing"
+          },
+          {
+            "timeInPeriod": "10:19",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Nick Schmaltz",
+            "teamAbbrev": "ARI",
+            "descKey": "interference"
+          }
+        ]
+      }
+    ],
+    "seasonSeries": [
+      {
+        "id": 2023020097,
+        "season": 20232024,
+        "gameType": 2,
+        "gameDate": "2023-10-24",
+        "startTimeUTC": "2023-10-25T02:30:00Z",
+        "easternUTCOffset": "-04:00",
+        "venueUTCOffset": "-07:00",
+        "gameState": "FUT",
+        "gameScheduleState": "OK",
+        "awayTeam": {
+          "id": 53,
+          "abbrev": "ARI",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/ARI_light.svg"
+        },
+        "homeTeam": {
+          "id": 26,
+          "abbrev": "LAK",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+        }
+      },
+      {
+        "id": 2023020115,
+        "season": 20232024,
+        "gameType": 2,
+        "gameDate": "2023-10-27",
+        "startTimeUTC": "2023-10-28T02:00:00Z",
+        "easternUTCOffset": "-04:00",
+        "venueUTCOffset": "-07:00",
+        "gameState": "FUT",
+        "gameScheduleState": "OK",
+        "awayTeam": {
+          "id": 26,
+          "abbrev": "LAK",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+        },
+        "homeTeam": {
+          "id": 53,
+          "abbrev": "ARI",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/ARI_light.svg"
+        }
+      },
+      {
+        "id": 2023020276,
+        "season": 20232024,
+        "gameType": 2,
+        "gameDate": "2023-11-20",
+        "startTimeUTC": "2023-11-21T02:00:00Z",
+        "easternUTCOffset": "-05:00",
+        "venueUTCOffset": "-07:00",
+        "gameState": "FUT",
+        "gameScheduleState": "OK",
+        "awayTeam": {
+          "id": 26,
+          "abbrev": "LAK",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/LAK_light.svg"
+        },
+        "homeTeam": {
+          "id": 53,
+          "abbrev": "ARI",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/ARI_light.svg"
+        }
+      }
+    ],
+    "gameInfo": {
+      "referees": [
+        "Ghislain Hebert",
+        "Kevin Pollock"
+      ],
+      "linesmen": [
+        "Bevan Mills",
+        "Matt MacPherson"
+      ],
+      "awayTeam": {
+        "headCoach": "Todd McLellan",
+        "scratches": [
+          {
+            "id": 8475246,
+            "firstName": "Kevin",
+            "lastName": "Connauton"
+          },
+          {
+            "id": 8475660,
+            "firstName": "Cam",
+            "lastName": "Talbot"
+          },
+          {
+            "id": 8476391,
+            "firstName": "T.J.",
+            "lastName": "Tynan"
+          },
+          {
+            "id": 8477463,
+            "firstName": "Steven",
+            "lastName": "Santini"
+          },
+          {
+            "id": 8478173,
+            "firstName": "Hayden",
+            "lastName": "Hodgson"
+          },
+          {
+            "id": 8478176,
+            "firstName": "Joe",
+            "lastName": "Hicketts"
+          },
+          {
+            "id": 8479336,
+            "firstName": "Carl",
+            "lastName": "Grundstrom"
+          },
+          {
+            "id": 8479421,
+            "firstName": "Jacob",
+            "lastName": "Moverare"
+          },
+          {
+            "id": 8479573,
+            "firstName": "Mikhail",
+            "lastName": "Maltsev"
+          },
+          {
+            "id": 8479994,
+            "firstName": "Jaret",
+            "lastName": "Anderson-Dolan"
+          },
+          {
+            "id": 8480805,
+            "firstName": "Tyler",
+            "lastName": "Madden"
+          },
+          {
+            "id": 8480851,
+            "firstName": "Akil",
+            "lastName": "Thomas"
+          },
+          {
+            "id": 8481051,
+            "firstName": "Cole",
+            "lastName": "Krygier"
+          },
+          {
+            "id": 8481239,
+            "firstName": "Samuel",
+            "lastName": "Fagemo"
+          },
+          {
+            "id": 8481532,
+            "firstName": "Alex",
+            "lastName": "Turcotte"
+          },
+          {
+            "id": 8481600,
+            "firstName": "Tobias",
+            "lastName": "Bjornfot"
+          },
+          {
+            "id": 8481696,
+            "firstName": "Kim",
+            "lastName": "Nousiainen"
+          },
+          {
+            "id": 8481707,
+            "firstName": "Erik",
+            "lastName": "Portillo"
+          },
+          {
+            "id": 8481732,
+            "firstName": "Andre",
+            "lastName": "Lee"
+          },
+          {
+            "id": 8482155,
+            "firstName": "Alex",
+            "lastName": "Laferriere"
+          },
+          {
+            "id": 8482160,
+            "firstName": "Martin",
+            "lastName": "Chromiak"
+          },
+          {
+            "id": 8482726,
+            "firstName": "Samuel",
+            "lastName": "Helenius"
+          },
+          {
+            "id": 8482730,
+            "firstName": "Brandt",
+            "lastName": "Clarke"
+          },
+          {
+            "id": 8482748,
+            "firstName": "Francesco",
+            "lastName": "Pinelli"
+          },
+          {
+            "id": 8483406,
+            "firstName": "Taylor",
+            "lastName": "Ward"
+          },
+          {
+            "id": 8484163,
+            "firstName": "Jakub",
+            "lastName": "Dvorak"
+          }
+        ]
+      },
+      "homeTeam": {
+        "headCoach": "André Tourigny",
+        "scratches": [
+          {
+            "id": 8474000,
+            "firstName": "Steven",
+            "lastName": "Kampfer"
+          },
+          {
+            "id": 8476856,
+            "firstName": "Matt",
+            "lastName": "Dumba"
+          },
+          {
+            "id": 8477482,
+            "firstName": "Zach",
+            "lastName": "Sanford"
+          },
+          {
+            "id": 8477993,
+            "firstName": "Justin",
+            "lastName": "Kirkland"
+          },
+          {
+            "id": 8479561,
+            "firstName": "Travis",
+            "lastName": "Barron"
+          },
+          {
+            "id": 8479619,
+            "firstName": "Michael",
+            "lastName": "Carcone"
+          },
+          {
+            "id": 8480075,
+            "firstName": "Cameron",
+            "lastName": "Crotty"
+          },
+          {
+            "id": 8480191,
+            "firstName": "Matt",
+            "lastName": "Villalta"
+          },
+          {
+            "id": 8480248,
+            "firstName": "Ryan",
+            "lastName": "McGregor"
+          },
+          {
+            "id": 8480855,
+            "firstName": "Jack",
+            "lastName": "McBain"
+          },
+          {
+            "id": 8480876,
+            "firstName": "Curtis",
+            "lastName": "Douglas"
+          },
+          {
+            "id": 8480891,
+            "firstName": "Michael",
+            "lastName": "Kesselring"
+          },
+          {
+            "id": 8480979,
+            "firstName": "Nathan",
+            "lastName": "Smith"
+          },
+          {
+            "id": 8481031,
+            "firstName": "Ivan",
+            "lastName": "Prosvetov"
+          },
+          {
+            "id": 8481077,
+            "firstName": "John",
+            "lastName": "Leonard"
+          },
+          {
+            "id": 8481159,
+            "firstName": "Montana",
+            "lastName": "Onyebuchi"
+          },
+          {
+            "id": 8481599,
+            "firstName": "Victor",
+            "lastName": "Soderstrom"
+          },
+          {
+            "id": 8481609,
+            "firstName": "Vladislav",
+            "lastName": "Kolyachonok"
+          },
+          {
+            "id": 8481699,
+            "firstName": "Aku",
+            "lastName": "Raty"
+          },
+          {
+            "id": 8481827,
+            "firstName": "Ben",
+            "lastName": "McCartney"
+          },
+          {
+            "id": 8482659,
+            "firstName": "Josh",
+            "lastName": "Doan"
+          },
+          {
+            "id": 8483099,
+            "firstName": "Anson",
+            "lastName": "Thornton"
+          },
+          {
+            "id": 8483447,
+            "firstName": "Conor",
+            "lastName": "Geekie"
+          },
+          {
+            "id": 8483472,
+            "firstName": "Maveric",
+            "lastName": "Lamoureux"
+          },
+          {
+            "id": 8483597,
+            "firstName": "Milos",
+            "lastName": "Kelemen"
+          },
+          {
+            "id": 8483763,
+            "firstName": "Maksymilian",
+            "lastName": "Szuber"
+          },
+          {
+            "id": 8484326,
+            "firstName": "Patrik",
+            "lastName": "Koch"
+          }
+        ]
+      }
+    }
+  }
+}

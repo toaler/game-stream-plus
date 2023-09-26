@@ -1,0 +1,681 @@
+{
+  "id": 2023010021,
+  "season": 20232024,
+  "gameType": 1,
+  "gameDate": "2023-09-25",
+  "venue": "Canada Life Centre",
+  "startTimeUTC": "2023-09-26T00:00:00Z",
+  "easternUTCOffset": "-04:00",
+  "venueUTCOffset": "-05:00",
+  "tvBroadcasts": [
+    {
+      "id": 292,
+      "market": "H",
+      "countryCode": "CA",
+      "network": "TSN3"
+    }
+  ],
+  "gameState": "LIVE",
+  "gameScheduleState": "OK",
+  "awayTeam": {
+    "id": 22,
+    "name": "Oilers",
+    "abbrev": "EDM",
+    "placeName": "Edmonton",
+    "score": 0,
+    "sog": 8,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+  },
+  "homeTeam": {
+    "id": 52,
+    "name": "Jets",
+    "abbrev": "WPG",
+    "placeName": "Winnipeg",
+    "score": 1,
+    "sog": 8,
+    "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+  },
+  "shootoutInUse": true,
+  "maxPeriods": 5,
+  "regPeriods": 3,
+  "otInUse": true,
+  "tiesInUse": false,
+  "clock": {
+    "timeRemaining": "03:44",
+    "secondsRemaining": 224,
+    "running": false,
+    "inIntermission": false
+  },
+  "summary": {
+    "linescore": {
+      "byPeriod": [
+        {
+          "period": 1,
+          "away": 0,
+          "home": 1
+        }
+      ],
+      "shootout": {
+        "awayDecidingGoal": 0,
+        "awayConversions": 0,
+        "awayAttempts": 0,
+        "homeDecidingGoal": 0,
+        "homeConversions": 0,
+        "homeAttempts": 0
+      },
+      "totals": {
+        "away": 0,
+        "home": 1
+      }
+    },
+    "scoring": [
+      {
+        "period": 1,
+        "goals": [
+          {
+            "situationCode": "1451",
+            "strength": "pp",
+            "playerId": 8478398,
+            "firstName": "Kyle",
+            "lastName": "Connor",
+            "name": "K. Connor",
+            "teamAbbrev": "WPG",
+            "headshot": "https://assets.nhle.com/mugs/nhl/20232024/WPG/8478398.png",
+            "goalsToDate": 1,
+            "awayScore": 0,
+            "homeScore": 1,
+            "leadingTeamAbbrev": "WPG",
+            "timeInPeriod": "15:06",
+            "shotType": "snap",
+            "goalModifier": "none",
+            "assists": [
+              {
+                "playerId": 8480014,
+                "firstName": "Gabriel",
+                "lastName": "Vilardi",
+                "assistsToDate": 1
+              },
+              {
+                "playerId": 8476460,
+                "firstName": "Mark",
+                "lastName": "Scheifele",
+                "assistsToDate": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "shootout": [],
+    "threeStars": [],
+    "teamGameStats": [
+      {
+        "category": "sog",
+        "awayValue": "8",
+        "homeValue": "8"
+      },
+      {
+        "category": "faceoffPctg",
+        "awayValue": "33.3",
+        "homeValue": "66.7"
+      },
+      {
+        "category": "powerPlay",
+        "awayValue": "0/0",
+        "homeValue": "1/2"
+      },
+      {
+        "category": "pim",
+        "awayValue": "4",
+        "homeValue": "0"
+      },
+      {
+        "category": "hits",
+        "awayValue": "1",
+        "homeValue": "7"
+      },
+      {
+        "category": "blockedShots",
+        "awayValue": "7",
+        "homeValue": "5"
+      },
+      {
+        "category": "giveaways",
+        "awayValue": "3",
+        "homeValue": "2"
+      },
+      {
+        "category": "takeaways",
+        "awayValue": "0",
+        "homeValue": "1"
+      }
+    ],
+    "shotsByPeriod": [
+      {
+        "period": 1,
+        "away": 8,
+        "home": 8
+      }
+    ],
+    "penalties": [
+      {
+        "period": 1,
+        "penalties": [
+          {
+            "timeInPeriod": "04:12",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Noel Hoefenmayer",
+            "teamAbbrev": "EDM",
+            "drawnBy": "Rasmus Kupari",
+            "descKey": "slashing"
+          },
+          {
+            "timeInPeriod": "13:11",
+            "type": "MIN",
+            "duration": 2,
+            "committedByPlayer": "Jayden Grubbe",
+            "teamAbbrev": "EDM",
+            "drawnBy": "Mark Scheifele",
+            "descKey": "high-sticking"
+          }
+        ]
+      }
+    ],
+    "seasonSeries": [
+      {
+        "id": 2023020077,
+        "season": 20232024,
+        "gameType": 2,
+        "gameDate": "2023-10-21",
+        "startTimeUTC": "2023-10-22T02:00:00Z",
+        "easternUTCOffset": "-04:00",
+        "venueUTCOffset": "-06:00",
+        "gameState": "FUT",
+        "gameScheduleState": "OK",
+        "awayTeam": {
+          "id": 52,
+          "abbrev": "WPG",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+        },
+        "homeTeam": {
+          "id": 22,
+          "abbrev": "EDM",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+        }
+      },
+      {
+        "id": 2023020349,
+        "season": 20232024,
+        "gameType": 2,
+        "gameDate": "2023-11-30",
+        "startTimeUTC": "2023-12-01T01:00:00Z",
+        "easternUTCOffset": "-05:00",
+        "venueUTCOffset": "-06:00",
+        "gameState": "FUT",
+        "gameScheduleState": "OK",
+        "awayTeam": {
+          "id": 22,
+          "abbrev": "EDM",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+        },
+        "homeTeam": {
+          "id": 52,
+          "abbrev": "WPG",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+        }
+      },
+      {
+        "id": 2023021142,
+        "season": 20232024,
+        "gameType": 2,
+        "gameDate": "2024-03-26",
+        "startTimeUTC": "2024-03-27T00:00:00Z",
+        "easternUTCOffset": "-04:00",
+        "venueUTCOffset": "-05:00",
+        "gameState": "FUT",
+        "gameScheduleState": "OK",
+        "awayTeam": {
+          "id": 22,
+          "abbrev": "EDM",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg"
+        },
+        "homeTeam": {
+          "id": 52,
+          "abbrev": "WPG",
+          "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg"
+        }
+      }
+    ],
+    "gameInfo": {
+      "referees": [
+        "Graham Skilliter",
+        "Cody Beach"
+      ],
+      "linesmen": [
+        "Trent Knorr",
+        "Caleb Apperson"
+      ],
+      "awayTeam": {
+        "headCoach": "Jay Woodcroft",
+        "scratches": [
+          {
+            "id": 8475169,
+            "firstName": "Evander",
+            "lastName": "Kane"
+          },
+          {
+            "id": 8475218,
+            "firstName": "Mattias",
+            "lastName": "Ekholm"
+          },
+          {
+            "id": 8475786,
+            "firstName": "Zach",
+            "lastName": "Hyman"
+          },
+          {
+            "id": 8475789,
+            "firstName": "Jack",
+            "lastName": "Campbell"
+          },
+          {
+            "id": 8476454,
+            "firstName": "Ryan",
+            "lastName": "Nugent-Hopkins"
+          },
+          {
+            "id": 8477015,
+            "firstName": "Connor",
+            "lastName": "Brown"
+          },
+          {
+            "id": 8477406,
+            "firstName": "Mattias",
+            "lastName": "Janmark"
+          },
+          {
+            "id": 8477498,
+            "firstName": "Darnell",
+            "lastName": "Nurse"
+          },
+          {
+            "id": 8477934,
+            "firstName": "Leon",
+            "lastName": "Draisaitl"
+          },
+          {
+            "id": 8477998,
+            "firstName": "Warren",
+            "lastName": "Foegele"
+          },
+          {
+            "id": 8478402,
+            "firstName": "Connor",
+            "lastName": "McDavid"
+          },
+          {
+            "id": 8478585,
+            "firstName": "Derek",
+            "lastName": "Ryan"
+          },
+          {
+            "id": 8478967,
+            "firstName": "Lane",
+            "lastName": "Pederson"
+          },
+          {
+            "id": 8479338,
+            "firstName": "Markus",
+            "lastName": "Niemelainen"
+          },
+          {
+            "id": 8479416,
+            "firstName": "Ben",
+            "lastName": "Gleason"
+          },
+          {
+            "id": 8479465,
+            "firstName": "Drake",
+            "lastName": "Caggiula"
+          },
+          {
+            "id": 8479576,
+            "firstName": "Vincent",
+            "lastName": "Desharnais"
+          },
+          {
+            "id": 8479973,
+            "firstName": "Stuart",
+            "lastName": "Skinner"
+          },
+          {
+            "id": 8480274,
+            "firstName": "Philip",
+            "lastName": "Kemp"
+          },
+          {
+            "id": 8480468,
+            "firstName": "James",
+            "lastName": "Hamblin"
+          },
+          {
+            "id": 8480802,
+            "firstName": "Ryan",
+            "lastName": "McLeod"
+          },
+          {
+            "id": 8480803,
+            "firstName": "Evan",
+            "lastName": "Bouchard"
+          },
+          {
+            "id": 8481734,
+            "firstName": "Maxim",
+            "lastName": "Denezhkin"
+          },
+          {
+            "id": 8481752,
+            "firstName": "Tomas",
+            "lastName": "Mazura"
+          },
+          {
+            "id": 8482108,
+            "firstName": "Carter",
+            "lastName": "Savoie"
+          },
+          {
+            "id": 8482202,
+            "firstName": "Maksim",
+            "lastName": "Berezkin"
+          },
+          {
+            "id": 8482469,
+            "firstName": "Jeremias",
+            "lastName": "Lindewall"
+          },
+          {
+            "id": 8482706,
+            "firstName": "Jake",
+            "lastName": "Chiasson"
+          },
+          {
+            "id": 8482864,
+            "firstName": "Luca",
+            "lastName": "Munzenberger"
+          },
+          {
+            "id": 8482941,
+            "firstName": "Shane",
+            "lastName": "Lachance"
+          },
+          {
+            "id": 8482979,
+            "firstName": "Dino",
+            "lastName": "Kambeitz"
+          },
+          {
+            "id": 8483534,
+            "firstName": "Ryan",
+            "lastName": "Fanti"
+          },
+          {
+            "id": 8483693,
+            "firstName": "Joel",
+            "lastName": "Maatta"
+          },
+          {
+            "id": 8483734,
+            "firstName": "Nikita",
+            "lastName": "Yevseyev"
+          },
+          {
+            "id": 8483769,
+            "firstName": "Samuel",
+            "lastName": "Jonsson"
+          },
+          {
+            "id": 8484139,
+            "firstName": "Beau",
+            "lastName": "Akey"
+          },
+          {
+            "id": 8484379,
+            "firstName": "Ethan",
+            "lastName": "De Jong"
+          },
+          {
+            "id": 8484455,
+            "firstName": "Nathaniel",
+            "lastName": "Day"
+          },
+          {
+            "id": 8484491,
+            "firstName": "Matt",
+            "lastName": "Copponi"
+          }
+        ]
+      },
+      "homeTeam": {
+        "headCoach": "Rick Bowness",
+        "scratches": [
+          {
+            "id": 8475455,
+            "firstName": "Brenden",
+            "lastName": "Dillon"
+          },
+          {
+            "id": 8475799,
+            "firstName": "Nino",
+            "lastName": "Niederreiter"
+          },
+          {
+            "id": 8475828,
+            "firstName": "Ivan",
+            "lastName": "Telegin"
+          },
+          {
+            "id": 8476331,
+            "firstName": "Dylan",
+            "lastName": "DeMelo"
+          },
+          {
+            "id": 8476392,
+            "firstName": "Adam",
+            "lastName": "Lowry"
+          },
+          {
+            "id": 8476945,
+            "firstName": "Connor",
+            "lastName": "Hellebuyck"
+          },
+          {
+            "id": 8476952,
+            "firstName": "Dominic",
+            "lastName": "Toninato"
+          },
+          {
+            "id": 8477085,
+            "firstName": "Ashton",
+            "lastName": "Sautner"
+          },
+          {
+            "id": 8477220,
+            "firstName": "Nate",
+            "lastName": "Schmidt"
+          },
+          {
+            "id": 8477940,
+            "firstName": "Nikolaj",
+            "lastName": "Ehlers"
+          },
+          {
+            "id": 8478092,
+            "firstName": "Pavel",
+            "lastName": "Kraskovsky"
+          },
+          {
+            "id": 8478424,
+            "firstName": "Jansen",
+            "lastName": "Harkins"
+          },
+          {
+            "id": 8478891,
+            "firstName": "Mason",
+            "lastName": "Appleton"
+          },
+          {
+            "id": 8479536,
+            "firstName": "Axel",
+            "lastName": "Jonsson-Fjallby"
+          },
+          {
+            "id": 8480113,
+            "firstName": "Alex",
+            "lastName": "Iafallo"
+          },
+          {
+            "id": 8480420,
+            "firstName": "Collin",
+            "lastName": "Delia"
+          },
+          {
+            "id": 8480990,
+            "firstName": "Declan",
+            "lastName": "Chisholm"
+          },
+          {
+            "id": 8481084,
+            "firstName": "Austin",
+            "lastName": "Wong"
+          },
+          {
+            "id": 8481547,
+            "firstName": "Simon",
+            "lastName": "Lundmark"
+          },
+          {
+            "id": 8481552,
+            "firstName": "Artemi",
+            "lastName": "Kniazev"
+          },
+          {
+            "id": 8481572,
+            "firstName": "Ville",
+            "lastName": "Heinola"
+          },
+          {
+            "id": 8481612,
+            "firstName": "Harrison",
+            "lastName": "Blaisdell"
+          },
+          {
+            "id": 8481695,
+            "firstName": "Henri",
+            "lastName": "Nikkanen"
+          },
+          {
+            "id": 8481748,
+            "firstName": "Logan",
+            "lastName": "Neaton"
+          },
+          {
+            "id": 8482149,
+            "firstName": "Cole",
+            "lastName": "Perfetti"
+          },
+          {
+            "id": 8482408,
+            "firstName": "Jeff",
+            "lastName": "Malott"
+          },
+          {
+            "id": 8482459,
+            "firstName": "Tyrel",
+            "lastName": "Bauer"
+          },
+          {
+            "id": 8482486,
+            "firstName": "Anton",
+            "lastName": "Johannesson"
+          },
+          {
+            "id": 8482787,
+            "firstName": "Nikita",
+            "lastName": "Chibrikov"
+          },
+          {
+            "id": 8482920,
+            "firstName": "Dmitry",
+            "lastName": "Kuzmin"
+          },
+          {
+            "id": 8482935,
+            "firstName": "Dmitri",
+            "lastName": "Rashevsky"
+          },
+          {
+            "id": 8483114,
+            "firstName": "Thomas",
+            "lastName": "Milic"
+          },
+          {
+            "id": 8483471,
+            "firstName": "Brad",
+            "lastName": "Lambert"
+          },
+          {
+            "id": 8483487,
+            "firstName": "Rutger",
+            "lastName": "McGroarty"
+          },
+          {
+            "id": 8483520,
+            "firstName": "Fabian",
+            "lastName": "Wagner"
+          },
+          {
+            "id": 8483526,
+            "firstName": "Danil",
+            "lastName": "Zhilkin"
+          },
+          {
+            "id": 8483579,
+            "firstName": "Wyatt",
+            "lastName": "Bongiovanni"
+          },
+          {
+            "id": 8483598,
+            "firstName": "Oskari",
+            "lastName": "Salminen"
+          },
+          {
+            "id": 8483672,
+            "firstName": "Garrett",
+            "lastName": "Brown"
+          },
+          {
+            "id": 8484143,
+            "firstName": "Colby",
+            "lastName": "Barlow"
+          },
+          {
+            "id": 8484204,
+            "firstName": "Zach",
+            "lastName": "Nehring"
+          },
+          {
+            "id": 8484430,
+            "firstName": "Jacob",
+            "lastName": "Julien"
+          },
+          {
+            "id": 8484483,
+            "firstName": "Connor",
+            "lastName": "Levis"
+          }
+        ]
+      }
+    }
+  }
+}

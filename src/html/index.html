@@ -124,6 +124,10 @@
                   <th>Home Score</th>
                   <th>Away Score</th>
                   <th>Away Team</th>
+                  <th>Status</th>
+                  <th>Status Detail</th>
+                  <th>Coded Game State</th>
+                  <th>Status Code</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -141,6 +145,10 @@
                   <td>${g.homeScore}</td>
                   <td>${g.awayScore}</td>
                   <td>${g.awayTeam.name}</td>
+                  <td>${g.status.abstractGameState}</td>
+                  <td>${g.status.detailedState}</td>
+                  <td>${g.status.codedGameState}</td>
+                  <td>${g.status.statusCode}</td>
                 </tr>
                 `;
                     }

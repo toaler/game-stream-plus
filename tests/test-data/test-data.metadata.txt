@@ -1,2 +1,11 @@
 boxscore.2023010001.json - https://statsapi.web.nhl.com/api/v1/game/2023010001/boxscore
 live.feed.2023010001.json - https://statsapi.web.nhl.com/api/v1/game/2023010001/feed/live
+api-web.nhle.com.v1.gamecenter.2023010001.landing.json - https://api-web.nhle.com/v1/gamecenter/2023010001/landing
+
+https://api-web.nhle.com/v1/gamecenter/2005010001/landing
+ - goes back all the way to 2005
+https://assets.nhle.com/logos/broadcast/324.svg
+https://assets.nhle.com/logos/nhl/svg/LAK_light.svg
+https://assets.nhle.com/logos/nhl/svg/ARI_light.svg
+https://assets.nhle.com/mugs/nhl/20232024/ARI/8479343.png
+https://assets.nhle.com/mugs/nhl/20232024/LAK/8478042.png
