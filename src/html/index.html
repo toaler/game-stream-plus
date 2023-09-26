@@ -81,6 +81,8 @@
     import ScheduleSupplier from "../supplier/ScheduleSupplier.js";
     import TimeUtils from "../util/TimeUtils.js";
 
+    const {datetimeFmt, userLocale} = constants();
+
     document.addEventListener('DOMContentLoaded', () => {
         const today = new Date();
         const endDate = new Date();
@@ -89,8 +91,6 @@
         document.getElementById('startDate').value = TimeUtils.formatDate(today);  // Set start date to today
         document.getElementById('endDate').value = TimeUtils.formatDate(endDate);  // Set end date to today + 7 days
     });
-
-
 
     document.getElementById('filter').addEventListener('submit', function (event) {
         const startDate = document.getElementById('startDate').value;
@@ -134,11 +134,12 @@
                 `;
 
                     for (const g of d.games) {
+
                         htmlContent += `
                  <tr>
                   <td><a href="game.html?gamePk=${g.gamePk}">${g.gamePk}</a></td>
                   <td>${g.link}</td>
-                  <td>${g.gameDate}</td>
+                  <td>${g.gameDate.toLocaleDateString(userLocale, datetimeFmt)}</td>
                   <td>${g.gameType}</td>
                   <td>${g.season}</td>
                   <td>${g.homeTeam.name}</td>
@@ -166,6 +167,19 @@
     });
 
 
+    function constants() {
+        const datetimeFmt = {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            timeZoneName: 'short'
+        };
+
+        const userLocale = Intl.DateTimeFormat().resolvedOptions().locale;
+        return {datetimeFmt, userLocale};
+    }
 </script>
 
 </body>

@@ -29,7 +29,7 @@ class ScheduleSupplier {
                         game.link,
                         game.gameType,
                         game.season,
-                        game.gameDate,
+                        new Date(game.gameDate),
                         new Status(game.status.abstractGameState, game.status.codedGameState, game.status.detailedState, game.status.statusCode, game.status.startTimeTBD),
                         new Team(game.teams.home.team.id, game.teams.home.team.name, game.teams.home.team.link),
                         new Team(game.teams.away.team.id, game.teams.away.team.name, game.teams.away.team.link),
