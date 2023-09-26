@@ -6,6 +6,7 @@ import Venue from "../state/Venue.js";
 import Content from "../state/Content.js";
 import Game from "../state/Game.js";
 import Status from "../state/Status.js";
+import Broadcast from "../state/Broadcast.js";
 
 class ScheduleSupplier {
 
@@ -22,8 +23,17 @@ class ScheduleSupplier {
             const g = new Set();
 
             day.games.forEach(function (game) {
-                g.add(
 
+                let broadcasts = new Set();
+                console.log(game);
+
+                if (game.broadcasts != null) {
+                    game.broadcasts.forEach(function (b) {
+                        broadcasts.add(new Broadcast(b.id, b.name, b.type, b.site, b.language))
+                    });
+                }
+
+                g.add(
                     new Game(
                         game.gamePk,
                         game.link,
@@ -37,6 +47,7 @@ class ScheduleSupplier {
                         game.teams.away.score,
                         new LeagueRecord(game.teams.home.leagueRecord.wins, game.teams.home.leagueRecord.losses, game.teams.home.leagueRecord.ot, game.teams.home.leagueRecord.type), // TODO read game.teams.home.leagueRecord
                         new LeagueRecord(game.teams.away.leagueRecord.wins, game.teams.away.leagueRecord.losses, game.teams.away.leagueRecord.ot, game.teams.away.leagueRecord.type), // TODO read game.teams.home.leagueRecord
+                        broadcasts,
                         new Venue(game.venue.name, game.venue.link),
                         new Content(game.content.link)));
             });
