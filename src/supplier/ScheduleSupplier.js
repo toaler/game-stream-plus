@@ -7,6 +7,7 @@ import Content from "../state/Content.js";
 import Game from "../state/Game.js";
 import Status from "../state/Status.js";
 import Broadcast from "../state/Broadcast.js";
+import LineScore from "../state/LineScore.js";
 
 class ScheduleSupplier {
 
@@ -49,7 +50,9 @@ class ScheduleSupplier {
                         new LeagueRecord(game.teams.away.leagueRecord.wins, game.teams.away.leagueRecord.losses, game.teams.away.leagueRecord.ot, game.teams.away.leagueRecord.type), // TODO read game.teams.home.leagueRecord
                         broadcasts,
                         new Venue(game.venue.name, game.venue.link),
-                        new Content(game.content.link)));
+                        new Content(game.content.link),
+                        new LineScore(game.linescore))
+                );
             });
 
             dates.add(new Day(day.date, day.totalItems, day.totalEvents, day.totalGames, day.totalMatches, g));

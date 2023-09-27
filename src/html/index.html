@@ -123,8 +123,10 @@
                   <th>Home Score</th>
                   <th>Away Score</th>
                   <th>Away Team</th>
+                  <th>Period</th>
                   <th>Status</th>
                   <th>Status Detail</th>
+                  <th>Tickets</th>
                   <th>Broadcasts</th>
                 </tr>
                 </thead>
@@ -143,8 +145,10 @@
                   <td>${g.homeScore}</td>
                   <td>${g.awayScore}</td>
                   <td>${g.awayTeam.name} ${g.awayRecord}</td>
+                  <td>${g.lineScore.currentPeriodOrdinal()}</td>
                   <td>${g.status.abstractGameState}</td>
                   <td>${g.status.detailedState}</td>
+                  <td></td>
                   <td>${Array.from(g.broadcasts).join(', ')}</td>
                 </tr>
                 `;

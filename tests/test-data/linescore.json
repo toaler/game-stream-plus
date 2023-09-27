@@ -1,0 +1,97 @@
+{
+  "currentPeriod" : 3,
+  "currentPeriodOrdinal" : "3rd",
+  "currentPeriodTimeRemaining" : "Final",
+  "periods" : [ {
+    "periodType" : "REGULAR",
+    "startTime" : "2023-09-25T18:08:01Z",
+    "endTime" : "2023-09-25T18:44:13Z",
+    "num" : 1,
+    "ordinalNum" : "1st",
+    "home" : {
+      "goals" : 2,
+      "shotsOnGoal" : 15,
+      "rinkSide" : "right"
+    },
+    "away" : {
+      "goals" : 0,
+      "shotsOnGoal" : 7,
+      "rinkSide" : "left"
+    }
+  }, {
+    "periodType" : "REGULAR",
+    "startTime" : "2023-09-25T19:02:56Z",
+    "endTime" : "2023-09-25T19:38:44Z",
+    "num" : 2,
+    "ordinalNum" : "2nd",
+    "home" : {
+      "goals" : 1,
+      "shotsOnGoal" : 11,
+      "rinkSide" : "left"
+    },
+    "away" : {
+      "goals" : 0,
+      "shotsOnGoal" : 8,
+      "rinkSide" : "right"
+    }
+  }, {
+    "periodType" : "REGULAR",
+    "startTime" : "2023-09-25T19:57:36Z",
+    "endTime" : "2023-09-25T20:35:27Z",
+    "num" : 3,
+    "ordinalNum" : "3rd",
+    "home" : {
+      "goals" : 2,
+      "shotsOnGoal" : 12,
+      "rinkSide" : "right"
+    },
+    "away" : {
+      "goals" : 0,
+      "shotsOnGoal" : 8,
+      "rinkSide" : "left"
+    }
+  } ],
+  "shootoutInfo" : {
+    "away" : {
+      "scores" : 0,
+      "attempts" : 0
+    },
+    "home" : {
+      "scores" : 0,
+      "attempts" : 0
+    }
+  },
+  "teams" : {
+    "home" : {
+      "team" : {
+        "id" : 13,
+        "name" : "Florida Panthers",
+        "link" : "/api/v1/teams/13"
+      },
+      "goals" : 5,
+      "shotsOnGoal" : 38,
+      "goaliePulled" : false,
+      "numSkaters" : 0,
+      "powerPlay" : false
+    },
+    "away" : {
+      "team" : {
+        "id" : 18,
+        "name" : "Nashville Predators",
+        "link" : "/api/v1/teams/18"
+      },
+      "goals" : 0,
+      "shotsOnGoal" : 23,
+      "goaliePulled" : false,
+      "numSkaters" : 0,
+      "powerPlay" : false
+    }
+  },
+  "powerPlayStrength" : "Even",
+  "hasShootout" : false,
+  "intermissionInfo" : {
+    "intermissionTimeRemaining" : 0,
+    "intermissionTimeElapsed" : 0,
+    "inIntermission" : false
+  }
+}
