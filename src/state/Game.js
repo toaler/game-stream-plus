@@ -1,7 +1,6 @@
 class Game {
     // Constructor method is called when a new instance is created
     constructor(gamePk, link, gameType, season, gameDate, status, homeTeam, awayTeam, homeScore, awayScore, homeRecord, awayRecord, broadcasts, venue, content, lineScore) {
-
         this._gamePk = gamePk;
         this._link = link;
         this._gameType = gameType;
